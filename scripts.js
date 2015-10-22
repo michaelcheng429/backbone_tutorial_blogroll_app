@@ -62,12 +62,14 @@ var BlogView = Backbone.View.extend({
 		this.model.set('author', $('.author-update').val());
 		this.model.set('title', $('.title-update').val());
 		this.model.set('url', $('.url-update').val());
+		blogsView.render();
 	},
 	cancel: function() {
 		blogsView.render();
 	},
 	delete: function() {
 		this.model.destroy();
+		blogsView.render();	
 	},
 	render: function() {
 		this.$el.html(this.template(this.model.toJSON()));
