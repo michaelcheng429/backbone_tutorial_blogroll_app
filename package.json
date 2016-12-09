@@ -21,6 +21,7 @@
     "e": "0.0.4",
     "express": "^4.12.0",
     "mongoose": "^3.8.24",
+    "body-parser": "^1.6.7",
     "underscore": "^1.8.2"
   }
 }
